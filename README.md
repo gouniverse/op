@@ -17,25 +17,25 @@ display := op.IfElse(str == "pass", "passed", "failed")
 - IfNil
 
 ```go
-display := op.IfNil(*displayMessage, "failed")
+display := op.IfNil(displayMessage, "failed")
 ```
 
 - IfNilOrEmpty
 
 ```go
-display := op.IfNilOrEmpty(*displayMessage, "failed")
+display := op.IfNilOrEmpty(displayMessage, "failed")
 ```
 
 - IfNilOrWhitespace
 
 ```go
-display := op.IfNilOrWhitespace(*displayMessage, "failed")
+display := op.IfNilOrWhitespace(displayMessage, "failed")
 ```
 
 - NilCoalescing (same as IfNil)
 
 ```go
-display := op.NilCoalescing(*displayMessage, "failed")
+display := op.NilCoalescing(displayMessage, "failed")
 ```
 
 - Ternary (same as IfElse)
